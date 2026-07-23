@@ -1,18 +1,18 @@
 package com.example.final_project_paper_mill;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 
-public class moController
+public class PopupController
 {
     @javafx.fxml.FXML
-    private TextField tf;
+    private Label label;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void oa(ActionEvent actionEvent) {
+    public void closeOA(ActionEvent actionEvent) {
     }
 }
