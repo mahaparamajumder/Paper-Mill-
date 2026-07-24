@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ProductionViewHistoryController
 {
@@ -45,6 +46,11 @@ public class ProductionViewHistoryController
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        idTC.setCellValueFactory(new PropertyValueFactory<>("recordId"));
+        numTC.setCellValueFactory(new PropertyValueFactory<>("batchNumber"));
+        weightTC.setCellValueFactory(new PropertyValueFactory<>("netWeight"));
+        dateTC.setCellValueFactory(new PropertyValueFactory<>("date"));
     }
 
     @javafx.fxml.FXML

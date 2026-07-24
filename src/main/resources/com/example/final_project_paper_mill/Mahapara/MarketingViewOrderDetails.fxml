@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_paper_mill.Mahapara.MarketingViewOrderDetailsController">
+    <children>
 
+        <Label layoutX="165.0" layoutY="20.0" text="Customer Order History &amp; Details" textFill="#b22222">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="165.0" layoutY="65.0" text="Select Date:" />
+        <DatePicker fx:id="orderDP" layoutX="250.0" layoutY="61.0" prefWidth="150.0" />
+        <Button layoutX="415.0" layoutY="61.0" mnemonicParsing="false" onAction="#filterOA" text="Filter" />
+
+        <TableView fx:id="orderTC_Table" layoutX="165.0" layoutY="105.0" prefHeight="375.0" prefWidth="515.0">
+            <columns>
+                <TableColumn fx:id="orderIdTC" prefWidth="90.0" text="Order ID" />
+                <TableColumn fx:id="custIdTC" prefWidth="100.0" text="Customer ID" />
+                <TableColumn fx:id="dateTC" prefWidth="100.0" text="Order Date" />
+                <TableColumn fx:id="amountTC" prefWidth="110.0" text="Total Amount" />
+                <TableColumn fx:id="managerIdTC" prefWidth="110.0" text="Manager ID" />
+            </columns>
+        </TableView>
+      <VBox layoutY="87.0" prefHeight="280.0" prefWidth="163.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addCustomerOA" prefHeight="26.0" prefWidth="183.0" text="Add Customer" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#createOrderOA" prefHeight="26.0" prefWidth="181.0" text="Create Order" />
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#viewCustomeroA" prefHeight="26.0" prefWidth="165.0" text="View Customers" />
+            <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#orderStatusOA" prefHeight="26.0" prefWidth="206.0" text="Order Status" />
+            <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#updateProductOA" prefHeight="26.0" prefWidth="174.0" text="Update Product" />
+            <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#chcekStockOA" prefHeight="26.0" prefWidth="186.0" text="Check Stock" />
+            <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#generateReportsOA" prefHeight="26.0" prefWidth="174.0" text="Generate Reports" />
+            <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#customerFeedbackOA" prefHeight="26.0" prefWidth="166.0" text="Customer Feedback" />
+            <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="165.0" text="Sign Out" textFill="#962e2e" />
+         </children>
+      </VBox>
+    </children>
 </AnchorPane>

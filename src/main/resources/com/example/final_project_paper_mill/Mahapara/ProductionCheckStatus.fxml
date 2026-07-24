@@ -19,23 +19,23 @@
       <Button layoutX="317.0" layoutY="187.0" mnemonicParsing="false" onAction="#fetchOA" text="Fetch Status" />
       <TableView fx:id="tableOA" layoutX="186.0" layoutY="239.0" prefHeight="200.0" prefWidth="483.0">
         <columns>
-          <TableColumn fx:id="dateTC" prefWidth="106.40003204345703" text="Date" />
-          <TableColumn fx:id="lineTC" prefWidth="115.99993896484375" text="Line" />
-            <TableColumn fx:id="quantityTC" prefWidth="133.60003662109375" text="Output Quantity" />
-            <TableColumn fx:id="targettC" prefWidth="127.99996948242188" text="Target" />
+          <TableColumn fx:id="dateTC" maxWidth="1064.0003204345703" minWidth="30.0" prefWidth="106.40003204345703" text="Date" />
+          <TableColumn fx:id="lineTC" maxWidth="1159.9993896484375" minWidth="30.0" prefWidth="115.99993896484375" text="Line" />
+            <TableColumn fx:id="quantityTC" maxWidth="1336.0003662109375" minWidth="30.0" prefWidth="133.60003662109375" text="Output Quantity" />
+            <TableColumn fx:id="targettC" maxWidth="1279.9996948242188" minWidth="30.0" prefWidth="127.99996948242188" text="Target" />
         </columns>
       </TableView>
-      <VBox layoutX="32.0" layoutY="19.0" prefHeight="428.0" prefWidth="139.0">
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="428.0" prefWidth="139.0">
          <children>
-            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" text="Check Status" />
-            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" text="Create Plans" />
-            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" text="Add Records" />
-            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" text="View History" />
-            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" text="Machine Status" />
-            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" text="Raw Material Stock" />
-            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" text="Update Stock" />
-            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" text="Generate Reports" />
-            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" text="Sign Out" textFill="#df1515" />
+            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="138.0" text="Check Status" />
+            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" prefHeight="26.0" prefWidth="141.0" text="Create Plans" />
+            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" prefHeight="26.0" prefWidth="140.0" text="Add Records" />
+            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" prefHeight="26.0" prefWidth="142.0" text="View History" />
+            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="141.0" text="Machine Status" />
+            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" prefHeight="26.0" prefWidth="144.0" text="Raw Material Stock" />
+            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" prefHeight="26.0" prefWidth="148.0" text="Update Stock" />
+            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" prefHeight="26.0" prefWidth="144.0" text="Generate Reports" />
+            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="141.0" text="Sign Out" textFill="#df1515" />
          </children>
       </VBox>
    </children>

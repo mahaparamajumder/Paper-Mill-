@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="518.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_paper_mill.Mahapara.MarketingViewSalesInfoController">
+   <children>
+      <Label fx:id="label" layoutX="290.0" layoutY="22.0" prefHeight="53.0" prefWidth="335.0" text="Sales Information &amp; Analytics" textFill="#a11b1b" />
+      <VBox layoutX="43.0" layoutY="76.0" prefHeight="280.0" prefWidth="163.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addCustomerOA" prefHeight="26.0" prefWidth="183.0" text="Add Customer" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#createOrderOA" prefHeight="26.0" prefWidth="181.0" text="Create Order" />
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#viewCustomeroA" prefHeight="26.0" prefWidth="165.0" text="View Customers" />
+            <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#orderStatusOA" prefHeight="26.0" prefWidth="206.0" text="Order Status" />
+            <Button layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#updateProductOA" prefHeight="26.0" prefWidth="174.0" text="Update Product" />
+            <Button layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#chcekStockOA" prefHeight="26.0" prefWidth="186.0" text="Check Stock" />
+            <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#generateReportsOA" prefHeight="26.0" prefWidth="174.0" text="Generate Reports" />
+            <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#customerFeedbackOA" prefHeight="26.0" prefWidth="166.0" text="Customer Feedback" />
+            <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="165.0" text="Sign Out" textFill="#962e2e" />
+         </children>
+      </VBox>
+      <Label layoutX="440.0" layoutY="120.0" text="Year" />
+      <ComboBox fx:id="yearCB" layoutX="471.0" layoutY="116.0" prefWidth="150.0" />
+      <ComboBox fx:id="monthCB" layoutX="471.0" layoutY="159.0" prefWidth="150.0" />
+      <Label layoutX="422.0" layoutY="163.0" text="Month" />
+      <Button layoutX="414.0" layoutY="216.0" mnemonicParsing="false" onAction="#generateOA" text="Generate Summary" />
+      <TableView fx:id="TV" layoutX="239.0" layoutY="277.0" prefHeight="200.0" prefWidth="426.0">
+        <columns>
+          <TableColumn fx:id="salesTC" prefWidth="131.199951171875" text="Sales ID" />
+          <TableColumn fx:id="revenueTC" prefWidth="160.00003051757812" text="Total Revenue" />
+            <TableColumn fx:id="orderTC" prefWidth="135.20001220703125" text="Total Orders " />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

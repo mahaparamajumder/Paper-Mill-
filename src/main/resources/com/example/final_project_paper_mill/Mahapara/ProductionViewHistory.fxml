@@ -9,23 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_paper_mill.Mahapara.ProductionViewHistoryController">
    <children>
-      <VBox layoutX="10.0" layoutY="10.0" prefHeight="428.0" prefWidth="139.0">
-         <children>
-            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" text="Check Status" />
-            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" text="Create Plans" />
-            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" text="Add Records" />
-            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" text="View History" />
-            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" text="Machine Status" />
-            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" text="Raw Material Stock" />
-            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" text="Update Stock" />
-            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" text="Generate Reports" />
-            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" text="Sign Out" textFill="#df1515" />
-         </children>
-      </VBox>
-      <TableView fx:id="TV" layoutX="141.0" layoutY="219.0" prefHeight="200.0" prefWidth="436.0">
+      <TableView fx:id="TV" layoutX="178.0" layoutY="219.0" prefHeight="200.0" prefWidth="399.0">
         <columns>
           <TableColumn fx:id="idTC" prefWidth="75.0" text="Record ID" />
           <TableColumn fx:id="numTC" prefWidth="118.4000244140625" text="Batch Number" />
@@ -41,5 +27,18 @@
       <Label layoutX="261.0" layoutY="71.0" text="Select Date" />
       <DatePicker fx:id="date" layoutX="331.0" layoutY="67.0" />
       <Button layoutX="305.0" layoutY="120.0" mnemonicParsing="false" onAction="#searchOA" text="Search" />
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="428.0" prefWidth="139.0">
+         <children>
+            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="138.0" text="Check Status" />
+            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" prefHeight="26.0" prefWidth="141.0" text="Create Plans" />
+            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" prefHeight="26.0" prefWidth="140.0" text="Add Records" />
+            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" prefHeight="26.0" prefWidth="142.0" text="View History" />
+            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="141.0" text="Machine Status" />
+            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" prefHeight="26.0" prefWidth="144.0" text="Raw Material Stock" />
+            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" prefHeight="26.0" prefWidth="148.0" text="Update Stock" />
+            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" prefHeight="26.0" prefWidth="144.0" text="Generate Reports" />
+            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="141.0" text="Sign Out" textFill="#df1515" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

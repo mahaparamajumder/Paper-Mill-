@@ -1,9 +1,11 @@
 package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 
-public class ProductionCreatePlansController
+public class ProductionCheckMachineController
 {
     @javafx.fxml.FXML
     private Button signoutOA;
@@ -16,7 +18,13 @@ public class ProductionCreatePlansController
     @javafx.fxml.FXML
     private Label label;
     @javafx.fxml.FXML
+    private ComboBox idCB;
+    @javafx.fxml.FXML
+    private Label label1;
+    @javafx.fxml.FXML
     private Button updateOA;
+    @javafx.fxml.FXML
+    private Label label2;
     @javafx.fxml.FXML
     private Button statusOA;
     @javafx.fxml.FXML
@@ -25,18 +33,10 @@ public class ProductionCreatePlansController
     private Button historyOA;
     @javafx.fxml.FXML
     private Button generateOA;
-    @javafx.fxml.FXML
-    private DatePicker date;
-    @javafx.fxml.FXML
-    private ComboBox gradeCB;
-    @javafx.fxml.FXML
-    private TextField planidTF;
-    @javafx.fxml.FXML
-    private TextField quantityTF;
 
     @javafx.fxml.FXML
     public void initialize() {
-        gradeCB.getItems().addAll("Uncoated","gloss");
+        idCB.getItems().addAll("101","102");
     }
 
     @javafx.fxml.FXML
@@ -45,10 +45,6 @@ public class ProductionCreatePlansController
 
     @javafx.fxml.FXML
     public void stockOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void saveOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -73,9 +69,5 @@ public class ProductionCreatePlansController
 
     @javafx.fxml.FXML
     public void recordOA(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void checkOA(ActionEvent actionEvent) {
     }
 }

@@ -1,36 +1,26 @@
 package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class MarketingUpdatePriceController
+public class MarketingAddCustomerController
 {
     @javafx.fxml.FXML
-    private ComboBox productCB;
+    private TextField companyTF;
     @javafx.fxml.FXML
-    private TableColumn productTC;
-    @javafx.fxml.FXML
-    private TableColumn priceTC;
-    @javafx.fxml.FXML
-    private TextField stockTF;
-    @javafx.fxml.FXML
-    private TextField priceTF;
+    private TextField addressTF;
     @javafx.fxml.FXML
     private Label label;
     @javafx.fxml.FXML
-    private TableColumn stockTC;
+    private TextField idTF;
     @javafx.fxml.FXML
-    private TableView TC;
+    private TextField contacttF;
+    @javafx.fxml.FXML
+    private TextField numTF;
 
     @javafx.fxml.FXML
     public void initialize() {
-        productCB.getItems().addAll("Uncoated","Gloss");
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
-        stockTC.setCellValueFactory(new PropertyValueFactory<>("stock"));
-
     }
 
     @javafx.fxml.FXML
@@ -66,7 +56,7 @@ public class MarketingUpdatePriceController
     }
 
     @javafx.fxml.FXML
-    public void updateoA(ActionEvent actionEvent) {
+    public void saveCustomerOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

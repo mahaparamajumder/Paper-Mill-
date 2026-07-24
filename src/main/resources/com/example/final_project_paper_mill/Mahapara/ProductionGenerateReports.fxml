@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_paper_mill.Mahapara.ProductionGenerateReportsController">
+   <children>
+      <VBox layoutX="40.0" layoutY="40.0" prefHeight="428.0" prefWidth="139.0">
+         <children>
+            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="138.0" text="Check Status" />
+            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" prefHeight="26.0" prefWidth="141.0" text="Create Plans" />
+            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" prefHeight="26.0" prefWidth="140.0" text="Add Records" />
+            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" prefHeight="26.0" prefWidth="142.0" text="View History" />
+            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="141.0" text="Machine Status" />
+            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" prefHeight="26.0" prefWidth="144.0" text="Raw Material Stock" />
+            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" prefHeight="26.0" prefWidth="148.0" text="Update Stock" />
+            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" prefHeight="26.0" prefWidth="144.0" text="Generate Reports" />
+            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="141.0" text="Sign Out" textFill="#df1515" />
+         </children>
+      </VBox>
+      <Label fx:id="label" layoutX="253.0" layoutY="40.0" text="Production Report Generator" textFill="#d42626" />
+      <Label layoutX="239.0" layoutY="99.0" text="Select Report Type" />
+      <ComboBox fx:id="CB" layoutX="351.0" layoutY="95.0" prefWidth="150.0" />
+      <Button layoutX="300.0" layoutY="172.0" mnemonicParsing="false" onAction="#OA" text="Generate Report" />
+      <Label fx:id="message" layoutX="261.0" layoutY="254.0" prefHeight="163.0" prefWidth="290.0" textFill="#bc3232" wrapText="true" />
+   </children>
 </AnchorPane>

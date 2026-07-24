@@ -1,36 +1,28 @@
 package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 
-public class MarketingUpdatePriceController
+public class MarketingGenerateSalesReportController
 {
     @javafx.fxml.FXML
-    private ComboBox productCB;
+    private Label preview;
     @javafx.fxml.FXML
-    private TableColumn productTC;
+    private DatePicker startDP;
     @javafx.fxml.FXML
-    private TableColumn priceTC;
+    private DatePicker endDP;
     @javafx.fxml.FXML
-    private TextField stockTF;
-    @javafx.fxml.FXML
-    private TextField priceTF;
+    private ComboBox typeCB;
     @javafx.fxml.FXML
     private Label label;
-    @javafx.fxml.FXML
-    private TableColumn stockTC;
-    @javafx.fxml.FXML
-    private TableView TC;
 
     @javafx.fxml.FXML
     public void initialize() {
-        productCB.getItems().addAll("Uncoated","Gloss");
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
-        stockTC.setCellValueFactory(new PropertyValueFactory<>("stock"));
-
+        if (typeCB != null) {
+            typeCB.getItems().addAll("Sales Summary", "Customer Growth", "Revenue Analysis");
+        }
     }
 
     @javafx.fxml.FXML
@@ -66,7 +58,7 @@ public class MarketingUpdatePriceController
     }
 
     @javafx.fxml.FXML
-    public void updateoA(ActionEvent actionEvent) {
+    public void generateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

@@ -10,26 +10,28 @@
 
 <AnchorPane prefHeight="355.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_paper_mill.Mahapara.ProductionCreatePlansController">
    <children>
-      <VBox layoutX="42.0" layoutY="29.0" prefHeight="428.0" prefWidth="139.0">
-         <children>
-            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" text="Check Status" />
-            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" text="Create Plans" />
-            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" text="Add Records" />
-            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" text="View History" />
-            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" text="Machine Status" />
-            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" text="Raw Material Stock" />
-            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" text="Update Stock" />
-            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" text="Generate Reports" />
-            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" text="Sign Out" textFill="#df1515" />
-         </children>
-      </VBox>
       <Label fx:id="label" layoutX="283.0" layoutY="45.0" text="Create Production Plans" textFill="#ea1d1d" />
-      <Label layoutX="425.0" layoutY="124.0" text="PlanID" />
+      <Label layoutX="443.0" layoutY="115.0" text="PlanID" />
       <Label layoutX="404.0" layoutY="156.0" text="PaperGrade" />
       <Label layoutX="410.0" layoutY="203.0" text="StartDate" />
       <Button layoutX="324.0" layoutY="277.0" mnemonicParsing="false" onAction="#saveOA" text="Save Plan" />
       <DatePicker fx:id="date" layoutX="467.0" layoutY="199.0" />
       <ComboBox fx:id="gradeCB" layoutX="480.0" layoutY="152.0" prefWidth="150.0" />
       <TextField fx:id="planidTF" layoutX="480.0" layoutY="111.0" />
+      <VBox layoutX="20.0" layoutY="20.0" prefHeight="428.0" prefWidth="139.0">
+         <children>
+            <Button fx:id="statusOA" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="138.0" text="Check Status" />
+            <Button fx:id="planOA" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#planOA" prefHeight="26.0" prefWidth="141.0" text="Create Plans" />
+            <Button fx:id="recordOA" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#recordOA" prefHeight="26.0" prefWidth="140.0" text="Add Records" />
+            <Button fx:id="historyOA" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#historyOA" prefHeight="26.0" prefWidth="142.0" text="View History" />
+            <Button fx:id="machineOA" layoutX="10.0" layoutY="87.0" mnemonicParsing="false" onAction="#statusOA" prefHeight="26.0" prefWidth="141.0" text="Machine Status" />
+            <Button fx:id="stockOA" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" onAction="#stockOA" prefHeight="26.0" prefWidth="144.0" text="Raw Material Stock" />
+            <Button fx:id="updateOA" layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#updateOA" prefHeight="26.0" prefWidth="148.0" text="Update Stock" />
+            <Button fx:id="generateOA" layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#generateOA" prefHeight="26.0" prefWidth="144.0" text="Generate Reports" />
+            <Button fx:id="signoutOA" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#signoutOA" prefHeight="26.0" prefWidth="141.0" text="Sign Out" textFill="#df1515" />
+         </children>
+      </VBox>
+      <Label layoutX="393.0" layoutY="234.0" text="Target Quantity" />
+      <TextField fx:id="quantityTF" layoutX="481.0" layoutY="230.0" />
    </children>
 </AnchorPane>

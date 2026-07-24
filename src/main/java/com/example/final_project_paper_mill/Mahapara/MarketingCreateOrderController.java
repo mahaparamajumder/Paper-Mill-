@@ -1,36 +1,29 @@
 package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class MarketingUpdatePriceController
+public class MarketingCreateOrderController
 {
     @javafx.fxml.FXML
-    private ComboBox productCB;
-    @javafx.fxml.FXML
-    private TableColumn productTC;
-    @javafx.fxml.FXML
-    private TableColumn priceTC;
-    @javafx.fxml.FXML
-    private TextField stockTF;
-    @javafx.fxml.FXML
-    private TextField priceTF;
+    private DatePicker datetF;
     @javafx.fxml.FXML
     private Label label;
     @javafx.fxml.FXML
-    private TableColumn stockTC;
+    private TextField orderTF;
     @javafx.fxml.FXML
-    private TableView TC;
+    private TextField managerTF;
+    @javafx.fxml.FXML
+    private TextField amountTF;
+    @javafx.fxml.FXML
+    private ComboBox customerCB;
 
     @javafx.fxml.FXML
     public void initialize() {
-        productCB.getItems().addAll("Uncoated","Gloss");
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
-        stockTC.setCellValueFactory(new PropertyValueFactory<>("stock"));
-
+        customerCB.getItems().addAll("101","102");
     }
 
     @javafx.fxml.FXML
@@ -43,6 +36,10 @@ public class MarketingUpdatePriceController
 
     @javafx.fxml.FXML
     public void updateProductOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void placeOrderOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
@@ -63,10 +60,6 @@ public class MarketingUpdatePriceController
 
     @javafx.fxml.FXML
     public void orderStatusOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void updateoA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

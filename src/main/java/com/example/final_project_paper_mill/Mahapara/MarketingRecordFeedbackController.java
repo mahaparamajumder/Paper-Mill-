@@ -1,35 +1,34 @@
 package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-public class MarketingUpdatePriceController
+import javafx.scene.control.TableView;
+
+public class MarketingRecordFeedbackController
 {
     @javafx.fxml.FXML
-    private ComboBox productCB;
+    private ComboBox ratingTF;
     @javafx.fxml.FXML
-    private TableColumn productTC;
-    @javafx.fxml.FXML
-    private TableColumn priceTC;
-    @javafx.fxml.FXML
-    private TextField stockTF;
-    @javafx.fxml.FXML
-    private TextField priceTF;
+    private TableColumn ratingTC;
     @javafx.fxml.FXML
     private Label label;
     @javafx.fxml.FXML
-    private TableColumn stockTC;
+    private TableColumn idTC;
+    @javafx.fxml.FXML
+    private ComboBox idTF;
     @javafx.fxml.FXML
     private TableView TC;
 
     @javafx.fxml.FXML
     public void initialize() {
-        productCB.getItems().addAll("Uncoated","Gloss");
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("productName"));
-        priceTC.setCellValueFactory(new PropertyValueFactory<>("price"));
-        stockTC.setCellValueFactory(new PropertyValueFactory<>("stock"));
+        idTF.getItems().addAll("101", "102");
+        ratingTF.getItems().addAll("1", "2", "3", "4", "5");
+        idTC.setCellValueFactory(new PropertyValueFactory<>("customerId"));
+        ratingTC.setCellValueFactory(new PropertyValueFactory<>("rating"));
 
     }
 
@@ -54,6 +53,10 @@ public class MarketingUpdatePriceController
     }
 
     @javafx.fxml.FXML
+    public void submitTF(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
     public void chcekStockOA(ActionEvent actionEvent) {
     }
 
@@ -63,10 +66,6 @@ public class MarketingUpdatePriceController
 
     @javafx.fxml.FXML
     public void orderStatusOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void updateoA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

@@ -2,6 +2,7 @@ package com.example.final_project_paper_mill.Mahapara;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ProductionCheckStatusController
 {
@@ -43,6 +44,10 @@ public class ProductionCheckStatusController
     @javafx.fxml.FXML
     public void initialize() {
         lineCB.getItems().addAll("Line1","Line2");
+        dateTC.setCellValueFactory(new PropertyValueFactory<>("date"));
+        lineTC.setCellValueFactory(new PropertyValueFactory<>("line"));
+        quantityTC.setCellValueFactory(new PropertyValueFactory<>("outputQuantity"));
+        targettC.setCellValueFactory(new PropertyValueFactory<>("target"));
     }
 
 
